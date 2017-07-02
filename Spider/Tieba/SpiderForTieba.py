@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
-import sys
 import os
 import urllib
 import urllib2
 import re
-
-
-# from ContentAnalysis import ContentAnalysis
+# 测试用，后边可以删掉，因为肯定抓和分析处理是两个进程的
+from TiebaContentAnalysis import *
 
 
 class SpiderForTieba:
@@ -15,13 +13,10 @@ class SpiderForTieba:
 
         # 爬虫的用户
         self.owner = owner
-        # 爬虫
-        # self.target = urllib.urlencode(target)
-
         self.target = urllib.quote(target)
         self.file = None
-        # self.contentAnalysis = ContentAnalysis()
-        print  self.target
+        self.contentAnalysis = TiebaContentAnalysis()
+
     def openURL(self, url):
 
         request = urllib2.Request(url)
@@ -45,9 +40,7 @@ class SpiderForTieba:
         url = "http://tieba.baidu.com/p/" + urlString
         content = self.openURL(url)
         self.createCacheFile(urlString, content)
-
-        print self.readCacheFile(urlString)
-
+        print self.contentAnalysis.readCacheFile(urlString)
 
     # 将相应的爬下来的内容写入Cache文件
     def createCacheFile(self, name, content):
@@ -66,21 +59,7 @@ class SpiderForTieba:
             if 'cacheFile' in locals():
                 cacheFile.close()
 
-    # 读取文件，但是如果打开文件失败会返回None
-    def readCacheFile(self,name):
-        dirPath = '../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'
-        filePath = dirPath + name
-        result = None
-        try:
-            cacheFile = open(filePath, 'r')
-            result = cacheFile.read()
-        except IOError as err:
-            print "Error in Reading file Data/Cache/SpiderCache/TiebaCache/Analysing Cache/" + name
-            print "Error is " + err
-        finally:
-            if 'cacheFile' in locals():
-                cacheFile.close()
-        return result
+
 
 
 test = SpiderForTieba(0, '中南大学')
