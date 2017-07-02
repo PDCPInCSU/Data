@@ -45,8 +45,11 @@ class SpiderForTieba:
         url = "http://tieba.baidu.com/p/" + urlString
         content = self.openURL(url)
         self.createCacheFile(urlString, content)
-        # print content
 
+        print self.readCacheFile(urlString)
+
+
+    # 将相应的爬下来的内容写入Cache文件
     def createCacheFile(self, name, content):
 
         dirPath = '../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'
@@ -57,12 +60,27 @@ class SpiderForTieba:
             cacheFile = open(filePath, 'a+')
             cacheFile.writelines(content)
         except IOError as err:
-            print "Error in Creating or Opening file " + name
             print "Error is " + err
+            print "Error in Creating or writing into Data/Cache/SpiderCache/TiebaCache/Analysing Cache/" + name
         finally:
             if 'cacheFile' in locals():
                 cacheFile.close()
 
+    # 读取文件，但是如果打开文件失败会返回None
+    def readCacheFile(self,name):
+        dirPath = '../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'
+        filePath = dirPath + name
+        result = None
+        try:
+            cacheFile = open(filePath, 'r')
+            result = cacheFile.read()
+        except IOError as err:
+            print "Error in Reading file Data/Cache/SpiderCache/TiebaCache/Analysing Cache/" + name
+            print "Error is " + err
+        finally:
+            if 'cacheFile' in locals():
+                cacheFile.close()
+        return result
 
 
 test = SpiderForTieba(0, '中南大学')
