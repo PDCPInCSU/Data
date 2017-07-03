@@ -22,24 +22,37 @@ class SpiderForTieba:
         self.__headers = None
         self.__cookieTimeOut = True
         self.__timer = timer
-        self.__pageRange = pageRange
+        self.__timerFlag= [True, True]
+        self.__timerFlagNum = 0
+        # self.__pageRange = pageRange
         try:
             if not os.path.exists('../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+target):
                 os.makedirs('../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+target)
         except IOError as err:
             print "Error in creating file Path: ../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/"+target
             print "Error is " + str(err)
+        # 开始运行
+        self.changeTimerAndPageRange(timer=timer, pageRange=pageRange)
 
-        self.__pageController(self.__pageRange, timer)
+    #  唯一一个对外开放的，用来调整Timer
+    def changeTimerAndPageRange(self, timer, pageRange):
+        self.__timer = timer
+        self.__timerFlagNum = (self.__timerFlagNum + 1) % 2
+        self.__timerFlag[(self.__timerFlagNum+1)%2] = False
+        self.__timerFlag[self.__timerFlagNum] = True
+        self.__pageController(pageRange= pageRange, flagNum= self.__timerFlagNum)
 
-    def __pageController(self, pageRange, timer):
+    # 我在这里之所以考虑简单粗暴的将While的flag改为self.__flag，主要是考虑到了
+    # 在实际过程中，pageRange不可能那么大，所以才这样，不过后边的话我感觉应该会有
+    # 更好的办法的
+    def __pageController(self, pageRange, flagNum):
         setNum = 0
-        while True:
+        while self.__timerFlag[flagNum]:
             for count in range(1, pageRange+1):
                 t = threading.Thread(target=self.__getIndex, args=(count, setNum%3))
                 t.start()
             setNum += 1
-            time.sleep(timer)
+            time.sleep(self.__timer)
 
 
     def __openURL(self, url):
@@ -71,16 +84,14 @@ class SpiderForTieba:
             content = self.__openURL(url)
         except IOError as err:
             print "Error in opening url : "+ url
+            print "Error is " + err
             # 不知道该Return什么0.0 其实应该是这个直接结束的
             return
         patternForIndex = '=\"/p/(\d+)'
         result = re.findall(patternForIndex, content)
         self.__mapMutex.acquire()
         for count in range(0,len(result)):
-
             if result[count] not in self.__map[setNum] :# 注意，正在修改
-                # self.testnum += 1
-                # print self.testnum
                 self.__map[setNum].add(result[count])
                 t = threading.Thread(target=self.__getThreadContent, args=(result[count],))
                 t.start()
@@ -134,7 +145,3 @@ class SpiderForTieba:
 
 
 test = SpiderForTieba(owner=0, target='刀剑神域', timer=5, pageRange=2)
-
-# test.getIndex(1)
-# test.getThreadContent('689776012')
-# print test.openURL("https://tieba.baidu.com/p/689776012")
