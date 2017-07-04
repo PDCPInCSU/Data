@@ -7,8 +7,8 @@ import threading
 import time
 import requests
 # 测试用，后边可以删掉，因为肯定抓和分析处理是两个进程的
-from TiebaContentAnalysis import *
-
+# from TiebaContentAnalysis import *
+#
 
 class SpiderForTieba:
 
@@ -16,7 +16,7 @@ class SpiderForTieba:
         # 爬虫的用户
         self.__owner = owner
         self.__target = target
-        self.__contentAnalysis = TiebaContentAnalysis(owner, target)
+        # self.__contentAnalysis = TiebaContentAnalysis(owner, target) # 感觉作用不大，打算把Analysis与Spider分成两部分，均由TaskManager控制
         self.__mapMutex = threading.RLock()
         self.__map = [set(''), set(''), set('')]
         self.__headers = None
@@ -26,10 +26,10 @@ class SpiderForTieba:
         self.__timerFlagNum = 0
         # self.__pageRange = pageRange
         try:
-            if not os.path.exists('../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+target):
-                os.makedirs('../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+target)
+            if not os.path.exists('../../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+target):
+                os.makedirs('../../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+target)
         except IOError as err:
-            print "Error in creating file Path: ../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/"+target
+            print "Error in creating file Path: /Data/Cache/SpiderCache/TiebaCache/Analysing Cache/"+target
             print "Error is " + str(err)
         # 开始运行
         self.changeTimerAndPageRange(timer=timer, pageRange=pageRange)
@@ -127,7 +127,7 @@ class SpiderForTieba:
 
     # 将相应的爬下来的内容写入Cache文件
     def __createCacheFile(self, name, content):
-        dirPath = '../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+self.__target + '/'
+        dirPath = '../../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+self.__target + '/'
         filePath = dirPath + name
         try:
             if not os.path.exists(dirPath):
@@ -142,6 +142,4 @@ class SpiderForTieba:
                 cacheFile.close()
 
 
-
-
-test = SpiderForTieba(owner=0, target='刀剑神域', timer=5, pageRange=2)
+test = SpiderForTieba(owner=0, target='中南大学', timer=1000000, pageRange=3)

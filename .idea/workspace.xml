@@ -2,94 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9196292-48f0-405e-91d8-0ceab2ea6746" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1975336370" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2093309685" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2170509767" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2238760960" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2387240734" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2525455608" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/3240438194" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/3282996597" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/3587551579" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/3594072975" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/3671264818" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/3777972794" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/3859452094" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/3912250768" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4355795769" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4642573589" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4768509137" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4775532510" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4806088401" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4861850062" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4986642961" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4998137735" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5002844973" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5039438634" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5059380232" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5096924211" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5105194084" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5137358443" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5142722968" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5145908679" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5153285164" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5160534444" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5165112603" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5168619529" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5173577987" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5173579713" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5173779854" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5182194422" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5183609771" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5187089953" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5187956275" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5190408799" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5190917727" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5192202023" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5193147750" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5195074360" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5196677515" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5197125087" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198345159" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198791795" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5199303022" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5199420574" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5202370352" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5202372261" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5202413142" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1822021805" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1933672939" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2106946564" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2219918062" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2280925253" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4409037488" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4918152608" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4967408472" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5036761339" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5152388879" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5185343906" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5191974586" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5192599412" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198483859" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198601896" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5200991665" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201118485" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201980834" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201982240" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5202506567" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1026483320" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1026483320" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1666689594" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1666689594" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1822021805" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1822021805" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1824296079" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1824296079" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1893157495" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1893157495" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1933672939" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1933672939" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1938865530" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1938865530" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1977393560" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/1977393560" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2000017829" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2000017829" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2106946564" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2106946564" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2219918062" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2219918062" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2258174551" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2258174551" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2280925253" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2280925253" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2698319291" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2698319291" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2831892893" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/2831892893" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/3684233732" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/3684233732" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/3891879083" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/3891879083" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4409037488" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4409037488" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4736597830" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4736597830" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4744045144" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4744045144" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4766889398" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4766889398" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4822001826" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4822001826" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4918152608" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4918152608" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4967408472" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/4967408472" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5002616956" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5002616956" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5009870353" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5009870353" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5036761339" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5036761339" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5050282361" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5050282361" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5052846568" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5052846568" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5074886216" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5074886216" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5126486503" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5126486503" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5138930458" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5138930458" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5141859569" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5141859569" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5152388879" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5152388879" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5158498870" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5158498870" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5164550826" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5164550826" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5164733820" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5164733820" />
@@ -100,11 +57,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5180188842" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5180188842" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5182750868" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5182750868" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5184194487" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5184194487" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5185343906" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5185343906" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5186539560" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5186539560" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5187419124" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5187419124" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5191974586" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5191974586" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5192599412" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5192599412" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5194034008" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5194034008" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5194826343" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5194826343" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5195787893" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5195787893" />
@@ -115,9 +69,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5197723321" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5197723321" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198006392" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198006392" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198324006" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198324006" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198337226" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198337226" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198359186" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198359186" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198483859" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198483859" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198601896" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5198601896" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5199184146" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5199184146" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5199309483" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5199309483" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5199906318" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5199906318" />
@@ -129,8 +82,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5200465538" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5200465538" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5200575210" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5200575210" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5200750042" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5200750042" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5200991665" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5200991665" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201118485" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201118485" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201282992" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201282992" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201438960" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201438960" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201847618" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201847618" />
@@ -140,11 +91,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201919486" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201919486" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201919685" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201919685" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201980485" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201980485" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201980834" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201980834" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201982240" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5201982240" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5202095942" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5202095942" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5202183334" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5202183334" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5202480435" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5202480435" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5202486477" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5202486477" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/689776012" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/689776012" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/768047551" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/768047551" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/768051403" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/768051403" />
@@ -152,6 +102,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/778611736" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/778611736" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/837237180" afterPath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/837237180" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spider/Tieba/SpiderForTieba.py" afterPath="$PROJECT_DIR$/Spider/Tieba/SpiderForTieba.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spider/Tieba/TiebaContentAnalysis.py" afterPath="$PROJECT_DIR$/Spider/Tieba/TiebaContentAnalysis.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -162,7 +113,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Data$Learning.coverage" NAME="Learning Coverage Results" MODIFIED="1498921095748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Learning" />
-    <SUITE FILE_PATH="coverage/Data$SpiderForTieba.coverage" NAME="SpiderForTieba Coverage Results" MODIFIED="1499090015778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider" />
+    <SUITE FILE_PATH="coverage/Data$SpiderForTieba.coverage" NAME="SpiderForTieba Coverage Results" MODIFIED="1499148841659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider/Tieba" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -199,11 +150,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpiderForTieba.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SpiderForTieba.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Spider/Tieba/SpiderForTieba.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-452">
-              <caret line="87" column="42" lean-forward="false" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+            <state relative-caret-position="373">
+              <caret line="140" column="39" lean-forward="false" selection-start-line="140" selection-start-column="39" selection-end-line="140" selection-end-column="39" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -211,11 +162,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TiebaContentAnalysis.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TiebaContentAnalysis.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Spider/Tieba/TiebaContentAnalysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="307">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -236,6 +187,7 @@
       <find>self.target</find>
       <find>for</find>
       <find>self.cre</find>
+      <find>TiebaContentAnalysis</find>
     </findStrings>
     <replaceStrings>
       <replace>self.__cre</replace>
@@ -256,8 +208,8 @@
         <option value="$PROJECT_DIR$/Learning/Spider.py" />
         <option value="$PROJECT_DIR$/Spider/ContentAnalysis.py" />
         <option value="$PROJECT_DIR$/Spider/SpiderForTieba.py" />
-        <option value="$PROJECT_DIR$/Spider/Tieba/TiebaContentAnalysis.py" />
         <option value="$PROJECT_DIR$/Spider/Tieba/SpiderForTieba.py" />
+        <option value="$PROJECT_DIR$/Spider/Tieba/TiebaContentAnalysis.py" />
       </list>
     </option>
   </component>
@@ -343,7 +295,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Learning" />
+              <option name="myItemId" value="Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpiderCache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TiebaCache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Analysing Cache" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -527,25 +495,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration default="false" name="SpiderForTieba" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/.pyenv/versions/anaconda2-4.3.1/envs/CroOpinion/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spider" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Data" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spider/Tieba/SpiderForTieba.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="Learning" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -565,9 +514,28 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="SpiderForTieba" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.pyenv/versions/anaconda2-4.3.1/envs/CroOpinion/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spider/Tieba" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Data" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spider/Tieba/TiebaContentAnalysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Python.SpiderForTieba" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Learning" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Learning" />
+      <item index="1" class="java.lang.String" itemvalue="Python.SpiderForTieba" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -611,6 +579,28 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22222222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39976552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -620,7 +610,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -939,14 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Spider/Tieba/TiebaContentAnalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Learning/SearchVSFindAll.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
@@ -975,11 +957,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Spider/Tieba/SpiderForTieba.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-452">
-          <caret line="87" column="42" lean-forward="false" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+        <state relative-caret-position="373">
+          <caret line="140" column="39" lean-forward="false" selection-start-line="140" selection-start-column="39" selection-end-line="140" selection-end-column="39" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spider/Tieba/TiebaContentAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
