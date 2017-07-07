@@ -8,7 +8,8 @@ import time
 import requests
 # 测试用，后边可以删掉，因为肯定抓和分析处理是两个进程的
 # from TiebaContentAnalysis import *
-#
+# TODO: 我的天我忘记了。。。有的时候有些函数返回结果是None或者是空。。。我忘记在回调的函数里边处理了。。。懵逼
+
 
 class SpiderForTieba:
 
@@ -84,7 +85,7 @@ class SpiderForTieba:
             content = self.__openURL(url)
         except IOError as err:
             print "Error in opening url : "+ url
-            print "Error is " + err
+            print "Error is " + str(err)
             # 不知道该Return什么0.0 其实应该是这个直接结束的
             return
         patternForIndex = '=\"/p/(\d+)'
@@ -119,8 +120,6 @@ class SpiderForTieba:
                 url = 'http://tieba.baidu.com/p/' + urlString + '?pn=' + str(count)
                 content = self.__openURL(url)
                 self.__createCacheFile(urlString, content)
-
-
         except IOError as err :
             print "Error in opening Tieba " + urlString
             print "Error is " + str(err)
