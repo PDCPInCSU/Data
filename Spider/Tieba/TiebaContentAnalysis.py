@@ -10,7 +10,7 @@ class TiebaContentAnalysis:
         self.__target = target
         content= self.__readCacheFile('5206927219') # 调试ReadCacheFile用
         self.__content = dict()
-        self.__getFileAnalyzed(content)
+        self.__getFileAnalyzed(content, '5206927219')
 
     # 读取文件，但是如果打开文件失败会返回None
     def __readCacheFile(self, name):
@@ -32,6 +32,22 @@ class TiebaContentAnalysis:
                 cacheFile.close()
         return result
 
+    # TODO: 在删除cache之后，其实本身存在这很大的逻辑漏洞，即，写入失败怎么办，我在这里只是简单的抛出了异常，但是还是删除了Analysis cache文件，这肯定是不对的，但是感觉具体还是太复杂了，短时间没有想出来一个比较合适的方法
+    def __createCacheFile(self, name, content):
+        dirPath = '../../Data/Cache/SpiderCache/TiebaCache/Regularized Cache/' + self.__target + '/'
+        filePath = dirPath + name
+        try:
+            if not os.path.exists(dirPath):
+                os.makedirs(dirPath)
+            cacheFile = open(filePath, 'a+')
+            cacheFile.writelines(content)
+            os.remove('../../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+self.__target+'/'+name)
+        except IOError as err:
+            print "Error is " + str(err)
+            print "Error in Creating or writing into Data/Cache/SpiderCache/TiebaCache/Regularized Cache/" + self.__target + '/' + name
+        finally:
+            if 'cacheFile' in locals():
+                cacheFile.close()
     # 控制整个的进程
     # def __analysingController(self, target, timer, numRange):
 
@@ -39,19 +55,16 @@ class TiebaContentAnalysis:
     # def __contentRegularing(self, content):
 
 
-    def __getFileAnalyzed(self, content):
+    def __getFileAnalyzed(self, content, name):
+        contents = dict()
         # 首先将文件里边若干页分离开，便于后边去
         pattern =re.compile(r"<!DOCTYPE html>[\w\W]*?</html>")
-        # TODO:这里留下来了一个坑,就是说这样匹配之后，因为result[]里边是str，这就导致了他会转置'字符，导致后边的data_filed后边紧跟的'变成了\'但是在经过Beautiful解析的时候没有去掉这个，反而变成了\\'，直接导致了后边在生成JSON的时候出错,而且还导致了一定数据的丢失
         result = re.findall(pattern, content)
-        # print result
-        # print type(result)
         # 然后针对每一个页面去做分段解析
         for eachPage in result:
-            contents = self.__getSegmented(str(eachPage))
-            # 然后将内容加入self.__contents,之所以考虑到在这里加而不是在__getSegmented加，
-            # 是因为总感觉那样不优美，可能以后有在这里对函数进行拓展的时候不方便
-            # for num in range(0, len(contents)):
+            contents.update(self.__getSegmented(eachPage))
+        self.__createCacheFile(name, str(contents))
+
 
 
     # 将每一个页面的内容按照楼层分割
@@ -71,23 +84,14 @@ class TiebaContentAnalysis:
 
     # 分析每一层楼的内容，并汇总返回
     def __getSegmentAnalyzed(self, content):
-        result = dict()
-        # content =
         soup = BeautifulSoup(content, 'lxml')
         # soup = BeautifulSoup(content,convertEntities = BeautifulSoup.HTML_ENTITIES)
         # 然后是content
         content = soup.find("div", attrs={"class":["d_post_content", "j_d_post_content"]}).get_text()
         data_filed =  soup.find("div", attrs={"class":["l_post", "j_l_post",  "l_post_bright"]}).div.parent["data-field"]
-        # 为了解决正则导致的奇怪的情况，具体的原因我在__getFileAnalyzed的TODO里边写了
-        # data_filed = data_filed[2:]+"\"}}"
         data_filed = json.loads(data_filed)
-
-        # print data_filed
-        # 接着是JSON里边的相关信息r
-        # data_filed = json.loads(soup.find("div", attrs={"class":["l_post", "j_l_post",  "l_post_bright"]}).div.parent["data-field"])
-        # print data_filed
         # 构造一个字典
-        contents = {
+        result = {
                         # 用楼层做Key
                         data_filed["content"]["post_no"]:
                         {
@@ -109,9 +113,7 @@ class TiebaContentAnalysis:
                         }
 
                     }
-        print contents
-        # contents = {}
-        return contents
+        return result
 
 
 

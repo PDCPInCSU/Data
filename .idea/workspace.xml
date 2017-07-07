@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9196292-48f0-405e-91d8-0ceab2ea6746" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5202851608" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spider/Tieba/SpiderForTieba.py" afterPath="$PROJECT_DIR$/Spider/Tieba/SpiderForTieba.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Cache/SpiderCache/TiebaCache/Analysing Cache/刀剑神域/5206927219" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spider/Tieba/TiebaContentAnalysis.py" afterPath="$PROJECT_DIR$/Spider/Tieba/TiebaContentAnalysis.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Data$Analysis.coverage" NAME="Analysis Coverage Results" MODIFIED="1499414800434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider/Tieba" />
+    <SUITE FILE_PATH="coverage/Data$Analysis.coverage" NAME="Analysis Coverage Results" MODIFIED="1499416602778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider/Tieba" />
     <SUITE FILE_PATH="coverage/Data$Learning.coverage" NAME="Learning Coverage Results" MODIFIED="1498921095748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Learning" />
     <SUITE FILE_PATH="coverage/Data$SpiderForTieba.coverage" NAME="SpiderForTieba Coverage Results" MODIFIED="1499407564042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider/Tieba" />
   </component>
@@ -25,8 +23,20 @@
       <file leaf-file-name="TiebaContentAnalysis.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Spider/Tieba/TiebaContentAnalysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="25" />
+            <state relative-caret-position="174">
+              <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="25" />
+              <folding>
+                <element signature="e#24#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpiderForTieba.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Spider/Tieba/SpiderForTieba.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="31" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -145,6 +155,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Tieba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpiderCache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TiebaCache" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -820,8 +856,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Spider/Tieba/SpiderForTieba.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1277">
-          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+        <state relative-caret-position="78">
+          <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="31" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
@@ -830,8 +866,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Spider/Tieba/TiebaContentAnalysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="25" />
+        <state relative-caret-position="174">
+          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="25" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
