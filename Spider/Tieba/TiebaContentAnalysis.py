@@ -1,16 +1,21 @@
 # -*- coding: utf-8 -*-
+import threadpool
+import time
 import os
 from bs4 import BeautifulSoup
 import json
 import re
+import chardet
 class TiebaContentAnalysis:
 
-    def __init__(self, owner, target):
+    def __init__(self, owner, target, poolSize, timer):
         self.__owner = owner
         self.__target = target
-        content= self.__readCacheFile('5206927219') # 调试ReadCacheFile用
+        self.__cacheFileSet = set()
         self.__content = dict()
-        self.__getFileAnalyzed(content, '5206927219')
+        self.__analysingController(poolSize,timer)
+        # content= self.__readCacheFile('5206927219') # 调试ReadCacheFile用
+        # self.__getFileAnalyzed(content, '5206927219')
 
     # 读取文件，但是如果打开文件失败会返回None
     def __readCacheFile(self, name):
@@ -22,6 +27,7 @@ class TiebaContentAnalysis:
             if os.path.exists(filePath):
                 cacheFile = open(filePath, 'r')
                 result = cacheFile.read()
+
             else:
                 print "File " + self.__target + '/' + name +" doesn't exist"
         except IOError as err:
@@ -48,9 +54,33 @@ class TiebaContentAnalysis:
         finally:
             if 'cacheFile' in locals():
                 cacheFile.close()
-    # 控制整个的进程
-    # def __analysingController(self, target, timer, numRange):
 
+    # 获得待处理的cache文件列表
+    def _getFileNames(self):
+        result = set()
+        for root, dirs, files in os.walk('../../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+self.__target):
+            # print root  # 当前遍历到的目录的根
+            # print dirs  # 当前遍历到的目录的根下的所有目录
+            # print files 当前遍历到的目录的根下的所有文件
+            for fileName in files:
+                result.add(fileName)
+        #  处理在MacOS下边的情况
+        if '.DS_Store' in result:
+           result.remove('.DS_Store')
+        return result
+
+
+    # 控制整个的进程
+    def __analysingController(self, poolSize, timer):
+        task_pool = threadpool.ThreadPool(poolSize)
+        while True:
+            self.__cacheFileSet |= self._getFileNames()
+            for eachFile in self.__cacheFileSet:
+                fileContent = self.__readCacheFile(eachFile)
+                requestList = threadpool.makeRequests(self.__getFileAnalyzed, [(None,{"content":fileContent, "name":eachFile})])
+                [task_pool.putRequest(req) for req in requestList]
+                task_pool.wait()
+            time.sleep(timer)
     # 对Cache文件进行处理,处理完最后将删除此Cache文件
     # def __contentRegularing(self, content):
 
@@ -117,4 +147,4 @@ class TiebaContentAnalysis:
 
 
 
-test = TiebaContentAnalysis(0, '刀剑神域')
+test = TiebaContentAnalysis(0, '中南大学',5,1000)

@@ -6,6 +6,8 @@ import re
 import threading
 import time
 import requests
+import chardet
+import sys
 # 测试用，后边可以删掉，因为肯定抓和分析处理是两个进程的
 # from TiebaContentAnalysis import *
 # TODO: 我的天我忘记了。。。有的时候有些函数返回结果是None或者是空。。。我忘记在回调的函数里边处理了。。。懵逼
@@ -74,7 +76,7 @@ class SpiderForTieba:
             except IOError:
                 print "Error in opening URL "+ url
                 pass
-        return response.read()
+        return response.read().decode('gbk','ignore').encode('utf-8')
 
 
     # 对相应的首页页面
@@ -133,6 +135,7 @@ class SpiderForTieba:
                 os.makedirs(dirPath)
             cacheFile = open(filePath, 'a+')
             cacheFile.writelines(content)
+            print chardet.detect(content)
         except IOError as err:
             print "Error is " + str(err)
             print "Error in Creating or writing into Data/Cache/SpiderCache/TiebaCache/Analysing Cache/"+self.__target + '/' +name
