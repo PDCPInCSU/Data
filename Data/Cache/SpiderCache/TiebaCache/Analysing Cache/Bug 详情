@@ -1,0 +1,43 @@
+Bug 详情：
+Traceback (most recent call last):
+  File "/Users/yihan/.pyenv/versions/anaconda2-4.3.1/envs/CroOpinion/lib/python2.7/site-packages/threadpool.py", line 158, in run
+    result = request.callable(*request.args, **request.kwds)
+  File "/Users/yihan/PycharmProjects/Data/Spider/Tieba/TiebaContentAnalysis.py", line 95, in __getFileAnalyzed
+    contents.update(self.__getSegmented(eachPage))
+  File "/Users/yihan/PycharmProjects/Data/Spider/Tieba/TiebaContentAnalysis.py", line 109, in __getSegmented
+    result.update(self.__getSegmentAnalyzed(str(eachContent)))
+  File "/Users/yihan/PycharmProjects/Data/Spider/Tieba/TiebaContentAnalysis.py", line 131, in __getSegmentAnalyzed
+    'authorId': data_filed["author"]["user_id"],
+KeyError: 'user_id'
+Traceback (most recent call last):
+  File "/Users/yihan/.pyenv/versions/anaconda2-4.3.1/envs/CroOpinion/lib/python2.7/site-packages/threadpool.py", line 158, in run
+    result = request.callable(*request.args, **request.kwds)
+  File "/Users/yihan/PycharmProjects/Data/Spider/Tieba/TiebaContentAnalysis.py", line 95, in __getFileAnalyzed
+    contents.update(self.__getSegmented(eachPage))
+  File "/Users/yihan/PycharmProjects/Data/Spider/Tieba/TiebaContentAnalysis.py", line 109, in __getSegmented
+    result.update(self.__getSegmentAnalyzed(str(eachContent)))
+  File "/Users/yihan/PycharmProjects/Data/Spider/Tieba/TiebaContentAnalysis.py", line 121, in __getSegmentAnalyzed
+    data_filed =  soup.find("div", attrs={"class":["l_post", "j_l_post",  "l_post_bright"]}).div.parent["data-field"]
+  File "/Users/yihan/.pyenv/versions/anaconda2-4.3.1/envs/CroOpinion/lib/python2.7/site-packages/bs4/element.py", line 1011, in __getitem__
+    return self.attrs[key]
+KeyError: 'data-field'
+Traceback (most recent call last):
+  File "/Users/yihan/.pyenv/versions/anaconda2-4.3.1/envs/CroOpinion/lib/python2.7/site-packages/threadpool.py", line 158, in run
+    result = request.callable(*request.args, **request.kwds)
+  File "/Users/yihan/PycharmProjects/Data/Spider/Tieba/TiebaContentAnalysis.py", line 95, in __getFileAnalyzed
+    contents.update(self.__getSegmented(eachPage))
+  File "/Users/yihan/PycharmProjects/Data/Spider/Tieba/TiebaContentAnalysis.py", line 109, in __getSegmented
+    result.update(self.__getSegmentAnalyzed(str(eachContent)))
+  File "/Users/yihan/PycharmProjects/Data/Spider/Tieba/TiebaContentAnalysis.py", line 121, in __getSegmentAnalyzed
+    data_filed =  soup.find("div", attrs={"class":["l_post", "j_l_post",  "l_post_bright"]}).div.parent["data-field"]
+  File "/Users/yihan/.pyenv/versions/anaconda2-4.3.1/envs/CroOpinion/lib/python2.7/site-packages/bs4/element.py", line 1011, in __getitem__
+    return self.attrs[key]
+KeyError: 'data-field'
+Traceback (most recent call last):
+  File "/Users/yihan/PycharmProjects/Data/Spider/Tieba/TiebaContentAnalysis.py", line 150, in <module>
+    test = TiebaContentAnalysis(0, '中南大学',5,1000)
+  File "/Users/yihan/PycharmProjects/Data/Spider/Tieba/TiebaContentAnalysis.py", line 16, in __init__
+    self.__analysingController(poolSize,timer)
+  File "/Users/yihan/PycharmProjects/Data/Spider/Tieba/TiebaContentAnalysis.py", line 83, in __analysingController
+    time.sleep(timer)
+KeyboardInterrupt

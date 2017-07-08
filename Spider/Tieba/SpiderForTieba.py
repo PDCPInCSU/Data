@@ -6,8 +6,11 @@ import re
 import threading
 import time
 import requests
+import chardet
+import sys
 # 测试用，后边可以删掉，因为肯定抓和分析处理是两个进程的
-from TiebaContentAnalysis import *
+# from TiebaContentAnalysis import *
+# TODO: 我的天我忘记了。。。有的时候有些函数返回结果是None或者是空。。。我忘记在回调的函数里边处理了。。。懵逼
 
 
 class SpiderForTieba:
@@ -16,7 +19,7 @@ class SpiderForTieba:
         # 爬虫的用户
         self.__owner = owner
         self.__target = target
-        self.__contentAnalysis = TiebaContentAnalysis(owner, target)
+        # self.__contentAnalysis = TiebaContentAnalysis(owner, target) # 感觉作用不大，打算把Analysis与Spider分成两部分，均由TaskManager控制
         self.__mapMutex = threading.RLock()
         self.__map = [set(''), set(''), set('')]
         self.__headers = None
@@ -26,10 +29,10 @@ class SpiderForTieba:
         self.__timerFlagNum = 0
         # self.__pageRange = pageRange
         try:
-            if not os.path.exists('../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+target):
-                os.makedirs('../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+target)
+            if not os.path.exists('../../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+target):
+                os.makedirs('../../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+target)
         except IOError as err:
-            print "Error in creating file Path: ../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/"+target
+            print "Error in creating file Path: /Data/Cache/SpiderCache/TiebaCache/Analysing Cache/"+target
             print "Error is " + str(err)
         # 开始运行
         self.changeTimerAndPageRange(timer=timer, pageRange=pageRange)
@@ -73,7 +76,7 @@ class SpiderForTieba:
             except IOError:
                 print "Error in opening URL "+ url
                 pass
-        return response.read()
+        return response.read().decode('gbk','ignore').encode('utf-8')
 
 
     # 对相应的首页页面
@@ -84,7 +87,7 @@ class SpiderForTieba:
             content = self.__openURL(url)
         except IOError as err:
             print "Error in opening url : "+ url
-            print "Error is " + err
+            print "Error is " + str(err)
             # 不知道该Return什么0.0 其实应该是这个直接结束的
             return
         patternForIndex = '=\"/p/(\d+)'
@@ -119,21 +122,20 @@ class SpiderForTieba:
                 url = 'http://tieba.baidu.com/p/' + urlString + '?pn=' + str(count)
                 content = self.__openURL(url)
                 self.__createCacheFile(urlString, content)
-
-
         except IOError as err :
             print "Error in opening Tieba " + urlString
             print "Error is " + str(err)
 
     # 将相应的爬下来的内容写入Cache文件
     def __createCacheFile(self, name, content):
-        dirPath = '../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+self.__target + '/'
+        dirPath = '../../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+self.__target + '/'
         filePath = dirPath + name
         try:
             if not os.path.exists(dirPath):
                 os.makedirs(dirPath)
             cacheFile = open(filePath, 'a+')
             cacheFile.writelines(content)
+            print chardet.detect(content)
         except IOError as err:
             print "Error is " + str(err)
             print "Error in Creating or writing into Data/Cache/SpiderCache/TiebaCache/Analysing Cache/"+self.__target + '/' +name
@@ -142,6 +144,4 @@ class SpiderForTieba:
                 cacheFile.close()
 
 
-
-
-test = SpiderForTieba(owner=0, target='刀剑神域', timer=5, pageRange=2)
+test = SpiderForTieba(owner=0, target='中南大学', timer=1000000, pageRange=3)
