@@ -1,17 +1,18 @@
 # -*- coding: utf-8 -*-
 from bosonnlp import BosonNLP
-import chardet
-import simplejson
+import time
+import threadpool
 import json
 import os
 class nlp:
 
     # token 是用户自己申请，或者是通过本平台代理的Boson或者是其他的token
     # sourceType 0是贴吧，1是知乎
-    def __init__(self, token, target, sourceType):
+    def __init__(self, token, target, sourceType, poolSize, timer):
         self.__token = token
         self.__target = target
         self.__nlp = BosonNLP(token)
+        self.__cacheFileSet = set()
 
         # 因为自身没有Switch，自己也懒得写，反正知乎等其他部分的爬虫没写，
         # 不知道是否Regularized Cache是否需要有其他格式的，就先只写针对目前JSON一种的
@@ -21,12 +22,33 @@ class nlp:
         else: # 否则的话就是Zhihu
             self.__regularizedCachePath = '../Data/Cache/SpiderCache/ZhihuCache/Regularized Cache/' + target +'/'
 
-        self.__getFileAnalyzied('2283736035')
+        self.__analysingController(poolSize, timer)
         # test =  self.__readCacheFile('2283736035')
         # self.__getSegmented(test)
 
-    def __getFileAnalyzied(self, name):
-        content = self.__readCacheFile(name)
+    def __getFileNames(self):
+        result = set()
+        for root , dirs, files in os.walk(self.__regularizedCachePath):
+            for fileName in files:
+                result.add(fileName)
+        if '.DS_Store' in result:
+            result.remove('.DS_Store')
+        return result
+
+    def __analysingController(self, poolSize, timer):
+        task_pool = threadpool.ThreadPool(poolSize)
+        while True:
+            self.__cacheFileSet |= self.__getFileNames()
+            for eachFile in self.__cacheFileSet:
+                print eachFile
+                fileContent = self.__readCacheFile(eachFile)
+                requestList = threadpool.makeRequests(self.__getFileAnalyzied,
+                                                      [(None, {"content":fileContent,"name": eachFile})])
+                [task_pool.putRequest(req) for req in requestList]
+                task_pool.wait()
+            time.sleep(timer)
+
+    def __getFileAnalyzied(self, content,name):
         for eachFloor in content:
             content.update({eachFloor: self.__analysis(content[eachFloor])})
         self.__createCacheFile(name, content)
@@ -92,4 +114,4 @@ class nlp:
 
 
 
-test = nlp('RT22z3DL.13450.vPiFD1J5MM6r', "中南大学", 0)
+test = nlp('RT22z3DL.13450.vPiFD1J5MM6r', "中南大学", 0, poolSize=5, timer=1000)

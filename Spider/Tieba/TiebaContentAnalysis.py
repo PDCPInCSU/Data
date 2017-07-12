@@ -57,7 +57,7 @@ class TiebaContentAnalysis:
                 cacheFile.close()
 
     # 获得待处理的cache文件列表
-    def _getFileNames(self):
+    def __getFileNames(self):
         result = set()
         for root, dirs, files in os.walk('../../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+self.__target):
             # print root  # 当前遍历到的目录的根
@@ -75,7 +75,7 @@ class TiebaContentAnalysis:
     def __analysingController(self, poolSize, timer):
         task_pool = threadpool.ThreadPool(poolSize)
         while True:
-            self.__cacheFileSet |= self._getFileNames()
+            self.__cacheFileSet |= self.__getFileNames()
             for eachFile in self.__cacheFileSet:
                 fileContent = self.__readCacheFile(eachFile)
                 requestList = threadpool.makeRequests(self.__getFileAnalyzed, [(None,{"content":fileContent, "name":eachFile})])
