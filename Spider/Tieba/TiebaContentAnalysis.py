@@ -40,13 +40,14 @@ class TiebaContentAnalysis:
 
     # TODO: 在删除cache之后，其实本身存在这很大的逻辑漏洞，即，写入失败怎么办，我在这里只是简单的抛出了异常，但是还是删除了Analysis cache文件，这肯定是不对的，但是感觉具体还是太复杂了，短时间没有想出来一个比较合适的方法
     def __createCacheFile(self, name, content):
+        # print content
         dirPath = '../../Data/Cache/SpiderCache/TiebaCache/Regularized Cache/' + self.__target + '/'
         filePath = dirPath + name
         try:
             if not os.path.exists(dirPath):
                 os.makedirs(dirPath)
             cacheFile = open(filePath, 'a+')
-            cacheFile.writelines(content)
+            cacheFile.write(content)
             os.remove('../../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+self.__target+'/'+name)
         except IOError as err:
             print "Error is " + str(err)
@@ -56,7 +57,7 @@ class TiebaContentAnalysis:
                 cacheFile.close()
 
     # 获得待处理的cache文件列表
-    def _getFileNames(self):
+    def __getFileNames(self):
         result = set()
         for root, dirs, files in os.walk('../../Data/Cache/SpiderCache/TiebaCache/Analysing Cache/'+self.__target):
             # print root  # 当前遍历到的目录的根
@@ -74,7 +75,7 @@ class TiebaContentAnalysis:
     def __analysingController(self, poolSize, timer):
         task_pool = threadpool.ThreadPool(poolSize)
         while True:
-            self.__cacheFileSet |= self._getFileNames()
+            self.__cacheFileSet |= self.__getFileNames()
             for eachFile in self.__cacheFileSet:
                 fileContent = self.__readCacheFile(eachFile)
                 requestList = threadpool.makeRequests(self.__getFileAnalyzed, [(None,{"content":fileContent, "name":eachFile})])
@@ -93,7 +94,10 @@ class TiebaContentAnalysis:
         # 然后针对每一个页面去做分段解析
         for eachPage in result:
             contents.update(self.__getSegmented(eachPage))
-        self.__createCacheFile(name, str(contents))
+        # contents = json.dumps(contents)
+        contents = json.dumps(contents)
+        print contents
+        self.__createCacheFile(name, contents)
 
 
 
@@ -106,8 +110,10 @@ class TiebaContentAnalysis:
         # TODO：需要在回调的函数里边处理一下为self.__content空的情况
         result = dict()
         for eachContent in content:
+            # test =self.__getSegmentAnalyzed(str(eachContent))
+            # result.update(test)
+            # print test
             result.update(self.__getSegmentAnalyzed(str(eachContent)))
-        # print len(content)
         return result
 
 
@@ -126,23 +132,24 @@ class TiebaContentAnalysis:
                         data_filed["content"]["post_no"]:
                         {
                             # 楼主相关信息
-                            'Author':
+                            "Author":
                                     {
-                                        'authorId': data_filed["author"]["user_id"],
-                                        'authorName': data_filed["author"]["user_name"],
-                                        'authorSex': data_filed["author"]["user_sex"]
+                                        "authorId": data_filed["author"]["user_id"],
+                                        "authorName": data_filed["author"]["user_name"],
+                                        "authorSex": data_filed["author"]["user_sex"]
                                     },
                             # 楼数
-                            'Floor': data_filed["content"]["post_no"],
+                            "Floor": data_filed["content"]["post_no"],
                             # 设备种类
-                            'Device': data_filed["content"]["open_type"],
+                            "Device": data_filed["content"]["open_type"],
                             # 发言时间
-                            'Date': data_filed["content"]["date"],
+                            "Date": data_filed["content"]["date"],
                             # 发言内容
-                            'Content': content
+                            "Content": content
                         }
 
                     }
+
         return result
 
 
