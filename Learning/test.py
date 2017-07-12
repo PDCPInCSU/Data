@@ -1,20 +1,18 @@
-import threadpool
-def hello(m, n, o):
-    """"""
-    print "m = %s, n = %s, o = %s" % (m, n, o)
+# -*- coding: utf-8 -*-
+from __future__ import print_function, unicode_literals
+import json
+import requests
 
 
-if __name__ == '__main__':
-    lst_vars_1 = ['1', '2', '3']
-    lst_vars_2 = ['4', '5', '6']
-    func_var = [(lst_vars_1, None), (lst_vars_2, None)]
+NER_URL = 'http://api.bosonnlp.com/ner/analysis'
 
-    dict_vars_1 = {'m': '1', 'n': '2', 'o': '3'}
-    dict_vars_2 = {'m': '4', 'n': '5', 'o': '6'}
-    func_var = [(None, dict_vars_1), (None, dict_vars_2)]
 
-    pool = threadpool.ThreadPool(2)
-    requests = threadpool.makeRequests(hello, func_var)
-    [pool.putRequest(req) for req in requests]
-    pool.wait()
+s = ['北京']
+data = json.dumps(s)
+headers = {'X-Token': 'RT22z3DL.13450.vPiFD1J5MM6r'}
+resp = requests.post(NER_URL, headers=headers, data=data.encode('utf-8'))
 
+
+for item in resp.json():
+    for entity in item['entity']:
+        print(''.join(item['word'][entity[0]:entity[1]]), entity[2])
